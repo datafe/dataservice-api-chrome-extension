@@ -1,0 +1,27 @@
+.api-creation-content {
+
+  .item {
+    display: flex;
+    margin: 8px 0;
+    width: 500px;
+
+    .label {
+      min-width: 100px;
+      line-height: 32px;
+      flex-grow: 0;
+    }
+
+    .label.required {
+      &::before {
+        content: '*';
+        color: red;
+      }
+    }
+
+    .ant-select {
+      width: 100%;
+      flex-grow: 1;
+    }
+  }
+
+}

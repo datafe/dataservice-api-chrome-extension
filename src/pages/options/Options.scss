@@ -1,0 +1,152 @@
+.app.options {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  padding: 10px;
+
+  .app-logo {
+    height: 40px;
+    pointer-events: none;
+    flex-grow: 0;
+  }
+
+  .app-header {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+
+    .header-text {
+      flex-grow: 1;
+      text-align: left;
+      margin-left: 8px;
+    }
+
+    .option-icon {
+      cursor: pointer;
+      margin-left: 8px;
+      font-size: 16px;
+      flex-grow: 0;
+    }
+  }
+
+  .content {
+    text-align: left;
+    width: 100%;
+
+    .ant-space {
+      width: 100%;
+      text-align: left;
+      margin-top: 16px;
+
+      .ant-card {
+
+        .ant-card-body {}
+
+        .parameter-item {
+          .empty-parameter-tip {
+            color: #00000040;
+          }
+        }
+
+        .config-item {
+          display: flex;
+          line-height: 32px;
+
+          .config-title {
+            margin-right: 8px;
+          }
+
+          .config-content {
+            &.ak {
+              display: flex;
+
+              .ant-input {
+                width: 150px;
+                margin-right: 8px;
+              }
+            }
+          }
+
+          .tip {
+            color: grey;
+          }
+        }
+
+        .parameter-item {
+
+          display: flex;
+          flex-wrap: wrap;
+
+          .parameter-item-content {
+            display: flex;
+            line-height: 22px;
+            height: 22px;
+            margin-left: 8px;
+
+            .parameter-item-value {
+              margin-right: 4px;
+            }
+
+            .ant-btn-link {
+              width: 16px;
+              padding: 0;
+              height: 22px;
+              line-height: 22px;
+            }
+
+          }
+        }
+
+        .common-parameters-toolbar,
+        .api-list-toolbar {
+
+          .ant-btn {
+            margin-left: 8px;
+          }
+
+        }
+
+        .api-list {
+
+          .api-operation {
+            .ant-btn {
+              margin-left: 8px;
+            }
+          }
+        }
+      }
+
+    }
+
+    .save-options {
+      margin-top: 16px;
+    }
+
+    .open-popup {
+      margin-left: 8px;
+    }
+  }
+
+}
+
+.ant-popconfirm {
+
+  .add-common-parameter,
+  .sync-from-alibaba-cloud {
+    .config-item {
+      margin-top: 8px;
+    }
+
+    .ant-input {
+      width: 150px;
+      margin-right: 8px;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.edit-api-content {
+
+  .group-title {
+    margin: 12px 0 16px 0;
+    font-weight: 600;
+    font-size: 14px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .add-parameter-btn {
+    .anticon {
+      margin-right: 4px;
+    }
+  }
+
+  .item {
+    display: flex;
+    margin: 8px 0;
+    width: 500px;
+
+    .label {
+      min-width: 100px;
+      line-height: 32px;
+      flex-grow: 0;
+    }
+
+    .label.required {
+      &::before {
+        content: '*';
+        color: red;
+      }
+    }
+
+    .ant-select {
+      width: 100%;
+      flex-grow: 1;
+    }
+  }
+
+  .parameters {
+    max-height: 600px;
+    overflow: auto;
+
+    .parameter-item {
+      display: flex;
+      margin-bottom: 16px;
+
+      line-height: 32px;
+
+      .ant-input {
+        width: 100px;
+      }
+
+      .label {
+        margin: 0 8px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &.required {
+          &::before {
+            content: '*';
+            color: red;
+          }
+        }
+
+      }
+    }
+  }
+
+  .footer {
+    margin-top: 24px;
+  }
+}

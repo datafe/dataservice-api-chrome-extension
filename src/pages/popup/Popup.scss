@@ -1,0 +1,177 @@
+html {}
+
+.app.popup {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  padding: 10px;
+
+
+  .app-logo {
+    height: 40px;
+    pointer-events: none;
+    flex-grow: 0;
+  }
+
+  .app-header {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+
+    .header-text {
+      flex-grow: 1;
+      text-align: left;
+      margin-left: 8px;
+    }
+
+    .option-icon {
+      cursor: pointer;
+      margin-left: 8px;
+      font-size: 16px;
+      flex-grow: 0;
+    }
+  }
+
+  .content {
+    width: 100%;
+    height: calc(100% - 70px);
+
+    .api-selector-wrapper {
+      display: flex;
+      line-height: 24px;
+      padding: 0 8px 12px 8px;
+
+      .label {
+        margin-right: 8px;
+      }
+
+      .ant-select {
+        width: 100%;
+        height: 24px;
+      }
+    }
+
+    .api-name-title,
+    .query-result-title,
+    .api-parameters-title {
+      font-size: 12px;
+      font-weight: 600;
+      margin: 12px 0;
+    }
+
+    .query-result-title {
+      margin-top: 16px;
+    }
+
+    .api-parameters {
+
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-y: hidden;
+      overflow-x: auto;
+      width: 100%;
+      height: 30px;
+      padding: 0 8px;
+
+      &::-webkit-scrollbar {
+        width: 4px !important;
+        height: 4px !important;
+      }
+
+      // 需要鼠标移上再显示滚动条
+      &::-webkit-scrollbar-thumb {
+        background: transparent;
+      }
+
+      &:hover {
+        &::-webkit-scrollbar-thumb {
+          background: grey;
+        }
+      }
+
+      .param-item {
+        display: flex;
+        line-height: 24px;
+        height: 24px;
+
+        .item-name {
+          margin-right: 8px;
+          color: grey;
+        }
+
+        .item-value {
+          margin-right: 16px;
+          width: 100px;
+
+          .ant-input {
+            height: 24px;
+          }
+        }
+      }
+
+    }
+
+    .query-btn {
+      margin-top: 12px;
+    }
+
+    .query-result {
+      height: calc(100% - 216px);
+
+      .query-result-error {
+        color: red;
+        height: 100%;
+        overflow: auto;
+      }
+
+      .result-wrap {
+        height: 100%;
+
+        .result-toolbar {
+          margin-bottom: 12px;
+          text-align: right;
+          display: flex;
+          justify-content: end;
+          line-height: 24px;
+          height: 24px;
+
+
+          .sheet-data-key-wrapper {
+            display: flex;
+            margin-right: 8px;
+
+            .label {
+              margin-right: 8px;
+              white-space: nowrap;
+            }
+
+            .ant-input {
+              width: 180px;
+            }
+          }
+        }
+
+        .result-content {
+          overflow: auto;
+          height: calc(100% - 36px);
+
+          .dsg-row:not(.dsg-row-header) {
+            .dsg-cell .dsg-input {
+              font-size: 12px;
+            }
+          }
+
+        }
+      }
+
+    }
+  }
+
+}

@@ -1,0 +1,175 @@
+.api-creation-content .item {
+  display: flex;
+  margin: 8px 0;
+  width: 500px;
+}
+.api-creation-content .item .label {
+  min-width: 100px;
+  line-height: 32px;
+  flex-grow: 0;
+}
+.api-creation-content .item .label.required::before {
+  content: "*";
+  color: red;
+}
+.api-creation-content .item .ant-select {
+  width: 100%;
+  flex-grow: 1;
+}.edit-api-content .group-title {
+  margin: 12px 0 16px 0;
+  font-weight: 600;
+  font-size: 14px;
+}
+.edit-api-content .group-title:first-child {
+  margin-top: 0;
+}
+.edit-api-content .add-parameter-btn .anticon {
+  margin-right: 4px;
+}
+.edit-api-content .item {
+  display: flex;
+  margin: 8px 0;
+  width: 500px;
+}
+.edit-api-content .item .label {
+  min-width: 100px;
+  line-height: 32px;
+  flex-grow: 0;
+}
+.edit-api-content .item .label.required::before {
+  content: "*";
+  color: red;
+}
+.edit-api-content .item .ant-select {
+  width: 100%;
+  flex-grow: 1;
+}
+.edit-api-content .parameters {
+  max-height: 600px;
+  overflow: auto;
+}
+.edit-api-content .parameters .parameter-item {
+  display: flex;
+  margin-bottom: 16px;
+  line-height: 32px;
+}
+.edit-api-content .parameters .parameter-item .ant-input {
+  width: 100px;
+}
+.edit-api-content .parameters .parameter-item .label {
+  margin: 0 8px;
+}
+.edit-api-content .parameters .parameter-item .label:first-child {
+  margin-left: 0;
+}
+.edit-api-content .parameters .parameter-item .label.required::before {
+  content: "*";
+  color: red;
+}
+.edit-api-content .footer {
+  margin-top: 24px;
+}.app.options {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  padding: 10px;
+}
+.app.options .app-logo {
+  height: 40px;
+  pointer-events: none;
+  flex-grow: 0;
+}
+.app.options .app-header {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.app.options .app-header .header-text {
+  flex-grow: 1;
+  text-align: left;
+  margin-left: 8px;
+}
+.app.options .app-header .option-icon {
+  cursor: pointer;
+  margin-left: 8px;
+  font-size: 16px;
+  flex-grow: 0;
+}
+.app.options .content {
+  text-align: left;
+  width: 100%;
+}
+.app.options .content .ant-space {
+  width: 100%;
+  text-align: left;
+  margin-top: 16px;
+}
+.app.options .content .ant-space .ant-card .parameter-item .empty-parameter-tip {
+  color: rgba(0, 0, 0, 0.2509803922);
+}
+.app.options .content .ant-space .ant-card .config-item {
+  display: flex;
+  line-height: 32px;
+}
+.app.options .content .ant-space .ant-card .config-item .config-title {
+  margin-right: 8px;
+}
+.app.options .content .ant-space .ant-card .config-item .config-content.ak {
+  display: flex;
+}
+.app.options .content .ant-space .ant-card .config-item .config-content.ak .ant-input {
+  width: 150px;
+  margin-right: 8px;
+}
+.app.options .content .ant-space .ant-card .config-item .tip {
+  color: grey;
+}
+.app.options .content .ant-space .ant-card .parameter-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.app.options .content .ant-space .ant-card .parameter-item .parameter-item-content {
+  display: flex;
+  line-height: 22px;
+  height: 22px;
+  margin-left: 8px;
+}
+.app.options .content .ant-space .ant-card .parameter-item .parameter-item-content .parameter-item-value {
+  margin-right: 4px;
+}
+.app.options .content .ant-space .ant-card .parameter-item .parameter-item-content .ant-btn-link {
+  width: 16px;
+  padding: 0;
+  height: 22px;
+  line-height: 22px;
+}
+.app.options .content .ant-space .ant-card .common-parameters-toolbar .ant-btn,
+.app.options .content .ant-space .ant-card .api-list-toolbar .ant-btn {
+  margin-left: 8px;
+}
+.app.options .content .ant-space .ant-card .api-list .api-operation .ant-btn {
+  margin-left: 8px;
+}
+.app.options .content .save-options {
+  margin-top: 16px;
+}
+.app.options .content .open-popup {
+  margin-left: 8px;
+}
+
+.ant-popconfirm .add-common-parameter .config-item,
+.ant-popconfirm .sync-from-alibaba-cloud .config-item {
+  margin-top: 8px;
+}
+.ant-popconfirm .add-common-parameter .ant-input,
+.ant-popconfirm .sync-from-alibaba-cloud .ant-input {
+  width: 150px;
+  margin-right: 8px;
+}

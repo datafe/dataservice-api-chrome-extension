@@ -1,0 +1,1 @@
+import{c as g,S as a}from"./base.zwil0R1V.js";const t=g("theme-storage-key","light",{storageType:a.Local,liveUpdate:!0}),e={...t,toggle:()=>{t.set(o=>o==="light"?"dark":"light")}};async function l(){console.log("initial theme",await e.get()),e.toggle(),console.log("toggled theme",await e.get())}l();

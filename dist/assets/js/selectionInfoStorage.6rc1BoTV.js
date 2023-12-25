@@ -1,0 +1,1 @@
+import{c as t,S as a}from"./base.zwil0R1V.js";const s="selection-info-storage-key",o={apiId:void 0,parameterName:void 0,selection:void 0},e=t(s,o,{storageType:a.Local,liveUpdate:!0}),i={...e,clear:()=>{e.set(()=>o)}};export{i as s};

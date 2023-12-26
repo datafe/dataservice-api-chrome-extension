@@ -14,6 +14,12 @@
 [掘金](https://juejin.cn/post/7316539465023045632)
 [medium](https://medium.com/@caramels/%E5%9F%BA%E4%BA%8E-chrome-%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%95%B0%E6%8D%AE%E6%9C%8D%E5%8A%A1-api-347779692485)
 
+## Demo
+
+![image](https://miro.medium.com/v2/resize:fit:4800/format:webp/0*eOmHCW0vhm1MJhNw.png)
+
+![image](https://miro.medium.com/v2/resize:fit:4800/format:webp/0*rMHOK-YFNrubKRta.png)
+
 ## Table of Contents
 
 - [Intro](#intro)

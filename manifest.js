@@ -22,7 +22,6 @@ const manifest = {
   action: {
     default_popup: 'src/pages/popup/index.html',
     default_icon: 'logo-128.png',
-    // "pinned": true
   },
   icons: {
     128: 'logo-128.png',
@@ -30,14 +29,6 @@ const manifest = {
     32: 'logo-32.png',
     16: 'logo-16.png'
   },
-  content_scripts: [
-    {
-      matches: ['http://*/*', 'https://*/*', '<all_urls>'],
-      js: ['src/pages/content/index.js'],
-      // KEY for cache invalidation
-      css: ['assets/css/contentStyle<KEY>.chunk.css'],
-    },
-  ],
   devtools_page: 'src/pages/devtools/index.html',
   web_accessible_resources: [
     {

@@ -10,9 +10,6 @@ const manifest = {
   version: packageJson.version,
   description: '__MSG_appDescription__',
   permissions: ['activeTab', 'storage', 'sidePanel', 'contextMenus', 'webNavigation'],
-  "host_permissions": [
-    "https://*/"
-  ],
   side_panel: {
     default_path: 'src/pages/sidepanel/index.html',
   },

@@ -8,7 +8,6 @@
     "url": "https://github.com/datafe/chrome-extension-data-service-api.git"
   },
   "scripts": {
-    "inner-install": "pnpm install --registry=https://registry.anpm.alibaba-inc.com",
     "build": "tsc --noEmit && vite build",
     "build:firefox": "tsc --noEmit && cross-env __FIREFOX__=true vite build",
     "build:watch": "cross-env __DEV__=true vite build -w --mode development",

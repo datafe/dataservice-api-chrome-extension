@@ -1,6 +1,7 @@
 // import intl from 'react-intl-universal';
 
-export const PRODUCT_NAME = '数据服务API';
+
+export const PRODUCT_NAME = chrome.i18n.getMessage("appName");
 
 export const defaultRequestHeaderContentType = 'text/json';
 

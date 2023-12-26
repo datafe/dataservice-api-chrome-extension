@@ -24,7 +24,9 @@ const useIntl = () => {
   const [initDone, setInitDone] = useState(false);
 
   useEffect(() => {
-    initializeIntl();
+    try {
+      initializeIntl();
+    } catch (e) { }
   }, []);
 
   const initializeIntl = () => {

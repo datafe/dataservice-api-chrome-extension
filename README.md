@@ -16,6 +16,8 @@
 
 ## Demo
 
+应用安装 Extension Installation [Link](https://chromewebstore.google.com/detail/%E6%95%B0%E6%8D%AE%E6%9C%8D%E5%8A%A1api/ohdabcajdgjfjpfhoghpkiifbchoonja)
+
 ![image](https://img.alicdn.com/imgextra/i2/O1CN01dfsLY626A0vusJcw5_!!6000000007620-49-tps-2716-1534.webp)
 
 ![image](https://img.alicdn.com/imgextra/i3/O1CN01ZDuMmU1x7sXpgw495_!!6000000006397-49-tps-952-692.webp)

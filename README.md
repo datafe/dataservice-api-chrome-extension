@@ -1,5 +1,5 @@
 <div align="center">
-<img src="public/logo-128.png" alt="logo"/>
+<img src="https://img.alicdn.com/imgextra/i3/O1CN01x1h8rS1kYoq175pqs_!!6000000004696-2-tps-128-128.png" alt="logo"/>
 <h1>数据服务API (DataService API) Chrome Extension</h1>
 
 ![](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)

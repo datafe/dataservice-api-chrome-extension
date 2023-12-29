@@ -10,6 +10,9 @@ none
 
 ---------------------------------------------------------------------
 
+## V1.0.3
+1. Support api path variables
+
 ## V1.0.2
 1. Remove unnecessary permissions
 

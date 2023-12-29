@@ -9,7 +9,7 @@ const manifest = {
   name: '__MSG_appName__',
   version: packageJson.version,
   description: '__MSG_appDescription__',
-  permissions: ['activeTab', 'storage', 'sidePanel', 'contextMenus'],
+  permissions: ['storage', 'sidePanel', 'contextMenus'],
   side_panel: {
     default_path: 'src/pages/sidepanel/index.html',
   },

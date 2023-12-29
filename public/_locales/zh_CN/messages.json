@@ -1,12 +1,12 @@
 {
   "appName": {
-    "message": "数据服务API"
+    "message": "数据服务"
   },
   "appDescription": {
     "message": "一款无与伦比的数据服务API扩展，可以在Chrome上设定API进行查询。"
   },
   "contextMenuTitle": {
-    "message": "数据服务API: 将选取文字传入参数"
+    "message": "数据服务: 将选取文字传入参数"
   },
   "contextMenuApiList": {
     "message": "API列表如下"

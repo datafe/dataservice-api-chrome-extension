@@ -1,12 +1,12 @@
 {
   "appName": {
-    "message": "DataService API"
+    "message": "DataService"
   },
   "appDescription": {
     "message": "A extraordinary data service API chrome extension, let you request a query in Chrome browser."
   },
   "contextMenuTitle": {
-    "message": "DataService API: passing selection into API parameter"
+    "message": "DataService: passing selection into API parameter"
   },
   "contextMenuApiList": {
     "message": "API List Below"

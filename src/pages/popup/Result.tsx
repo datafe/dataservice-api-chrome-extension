@@ -48,11 +48,11 @@ const Result: React.FC<IProps> = (props) => {
         setColumns(columns);
         delay(() => setSheetData(target || []), 150);
       } else if (isString(target) || isNumber(target) || isBoolean(target)) {
-        setColumns({
+        setColumns([{
           ...keyColumn('content', textColumn),
           title: 'content',
           minWidth: 200,
-        });
+        }]);
         delay(() => setSheetData([{ content: target }]), 150);
       } else if (target) {
         const dataKeys = Object.keys(target) || [];

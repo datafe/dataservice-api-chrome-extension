@@ -117,6 +117,20 @@ const Popup: React.FC<IProps> = () => {
         const apiParams = api?.apiParams || [];
         const mergedParams = [...commonParameters, ...apiParams];
         const requestHeaderContentType = api?.requestHeaderContentType;
+
+        // deal with api path
+        let apiPath = api?.apiPath || '';
+        for (let i = mergedParams?.length - 1; i >= 0; i--) {
+          const apiParam = mergedParams?.[i];
+          const pathVarStr = `{${apiParam?.name}}`;
+          if (apiPath?.includes?.(pathVarStr)) {
+            // replace path var
+            apiPath = apiPath?.replaceAll?.(pathVarStr, apiParam.value);
+            // remove param
+            mergedParams?.splice?.(i, 1);
+          }
+        }
+
         let query;
         if (api?.apiMethod === 'POST') {
           let _params;
@@ -139,9 +153,9 @@ const Popup: React.FC<IProps> = () => {
           }
           const options: RequestInit = { method: api?.apiMethod, body: JSON.stringify(_params) };
           if (requestHeaderContentType) options.headers = { 'Content-Type': requestHeaderContentType };
-          query = await fetch(api?.apiPath || '', options);
+          query = await fetch(apiPath, options);
         } else {
-          const url = new URL(api?.apiPath || '');
+          const url = new URL(apiPath);
           const params: { [key: string]: any } = {};
           mergedParams?.forEach?.((p) => params[p?.name] = p?.value);
           url.search = new URLSearchParams(params).toString();
@@ -150,7 +164,15 @@ const Popup: React.FC<IProps> = () => {
           query = await fetch(url, options);
         }
 
-        const result = await query?.json?.();
+        let result;
+        try {
+          if (requestHeaderContentType?.includes?.('xml')) {
+            // result = new window?.DOMParser?.()?.parseFromString(query?.text?.(), "text/xml");
+            result = { result: await query?.text?.() };
+          } else result = await query?.json?.();
+        } catch (e) {
+          result = { result: await query?.text?.() };
+        }
 
         if (result) setResult(result);
       }
@@ -164,7 +186,9 @@ const Popup: React.FC<IProps> = () => {
   if (reloading) return <div className="app popup reloading"> {intl.get('reloading').d('重新载入')} ... </div>;
 
   return (
-    <div className="app popup">
+    <div className="app popup" onKeyDown={(e) => {
+      if (e?.key === 'Enter') onQuery?.();
+    }}>
       <header className="app-header">
         <img src={logo} className="app-logo" alt="logo" />
         <div className="header-text">{PRODUCT_NAME}</div>

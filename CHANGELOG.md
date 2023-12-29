@@ -10,6 +10,9 @@ none
 
 ---------------------------------------------------------------------
 
+## V1.0.2
+1. Remove unnecessary permissions
+
 ## V1.0.0
 ### Added
 1. initialized

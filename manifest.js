@@ -9,16 +9,17 @@ const manifest = {
   name: '__MSG_appName__',
   version: packageJson.version,
   description: '__MSG_appDescription__',
-  permissions: ['storage', 'sidePanel', 'contextMenus'],
+  // permissions: ['storage', 'sidePanel', 'contextMenus'],
+  permissions: ['storage', 'sidePanel'],
   side_panel: {
     default_path: 'src/pages/sidepanel/index.html',
   },
   options_page: 'src/pages/options/index.html',
   default_locale: "zh_CN",
-  background: {
-    service_worker: 'src/pages/background/index.js',
-    type: 'module',
-  },
+  // background: {
+  //   service_worker: 'src/pages/background/index.js',
+  //   type: 'module',
+  // },
   action: {
     default_popup: 'src/pages/popup/index.html',
     default_icon: 'logo-128.png',

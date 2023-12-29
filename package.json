@@ -1,8 +1,15 @@
 {
   "name": "chrome-extension-data-service-api",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "chrome extension data service api",
-  "license": "MIT",
+  "keywords": [
+    "dataservice",
+    "API",
+    "Big Data",
+    "DataWorks"
+  ],
+  "author": "Samuel Hsin <caramels@gmail.com> (https://github.com/datafe)",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/datafe/chrome-extension-data-service-api.git"

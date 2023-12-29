@@ -10,6 +10,9 @@ none
 
 ---------------------------------------------------------------------
 
+## V1.0.4
+1. Remove context menu permission
+
 ## V1.0.3
 1. Support api path variables
 

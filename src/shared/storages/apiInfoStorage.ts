@@ -10,6 +10,30 @@ type ApiInfoStorage = BaseStorage<ApiInfo> & {
 
 const defaultApiList: ApiData[] = [
   {
+    apiId: 'en-word-dictionary',
+    apiName: 'English Word Dictionary',
+    apiMethod: 'GET',
+    apiPath: 'https://api.dictionaryapi.dev/api/v2/entries/en/{word}',
+    description: 'english word dictionary',
+    apiParams: [
+      { name: 'word', value: 'hello' },
+    ],
+    sheetDisplayDataKey: '0.phonetics.1',
+  },
+  // {
+  //   apiId: 'zh-word-dictionary',
+  //   apiName: 'Chinese Word Dictionary',
+  //   apiMethod: 'GET',
+  //   apiPath: 'https://ctext.org/dictionary.pl',
+  //   description: 'chinese word dictionary',
+  //   apiParams: [
+  //     { name: 'if', value: 'en' },
+  //     { name: 'char', value: '你' },
+  //   ],
+  //   requestHeaderContentType: 'application/xml',
+  //   sheetDisplayDataKey: '',
+  // },
+  {
     apiId: 'zh-simple-tradition-transfer',
     apiName: '中文简繁互转',
     apiMethod: 'GET',
@@ -22,6 +46,26 @@ const defaultApiList: ApiData[] = [
     sheetDisplayDataKey: 'data',
   },
   {
+    apiId: 'weather-forecast',
+    apiName: 'Weather Forecast',
+    apiMethod: 'GET',
+    apiPath: 'https://goweather.herokuapp.com/weather/{place}',
+    description: 'Weather forecast',
+    apiParams: [
+      { name: 'place', value: 'beijing' }
+    ],
+    sheetDisplayDataKey: 'forecast',
+  },
+  {
+    apiId: 'usd-currency-exchange',
+    apiName: 'USD Currencies',
+    apiMethod: 'GET',
+    apiPath: 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.json',
+    description: 'Latest USD currencies',
+    apiParams: [],
+    sheetDisplayDataKey: 'usd.eur',
+  },
+  {
     apiId: 'usd-cny-currency-exchange',
     apiName: '美金-人民币最新汇率',
     apiMethod: 'GET',
@@ -30,32 +74,14 @@ const defaultApiList: ApiData[] = [
     apiParams: [],
     sheetDisplayDataKey: '',
   },
-  {
-    apiId: 'hangzhou-current-weather',
-    apiName: '杭州目前天气',
-    apiMethod: 'GET',
-    apiPath: 'https://api.caiyunapp.com/v2/TAkhjf8d1nlSlspN/120.210752,30.246286/realtime.json',
-    description: '杭州天气信息',
-    apiParams: [],
-    sheetDisplayDataKey: 'result.apparent_temperature',
-  },
-  {
-    apiId: 'hangzhou-weather-forecast',
-    apiName: '杭州天气预测',
-    apiMethod: 'GET',
-    apiPath: 'https://goweather.herokuapp.com/weather/hangzhou',
-    description: '杭州天气信息',
-    apiParams: [],
-    sheetDisplayDataKey: 'forecast',
-  },
   // {
-  //   apiId: 'usd-currency-exchange',
-  //   apiName: '美金对各货币最新汇率',
+  //   apiId: 'hangzhou-current-weather',
+  //   apiName: '杭州目前天气',
   //   apiMethod: 'GET',
-  //   apiPath: 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.json',
-  //   description: '美金对各货币最新汇率',
+  //   apiPath: 'https://api.caiyunapp.com/v2/TAkhjf8d1nlSlspN/120.210752,30.246286/realtime.json',
+  //   description: '杭州天气信息',
   //   apiParams: [],
-  //   sheetDisplayDataKey: '',
+  //   sheetDisplayDataKey: 'result.apparent_temperature',
   // },
   // {
   //   apiId: 'hk-weather',

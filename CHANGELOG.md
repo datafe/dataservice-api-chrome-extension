@@ -10,6 +10,9 @@ none
 
 ---------------------------------------------------------------------
 
+## V1.0.5
+1. Re-add context menu permission
+
 ## V1.0.4
 1. Remove context menu permission
 

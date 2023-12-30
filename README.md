@@ -18,15 +18,13 @@
 
 应用安装 Extension Installation [Link](https://chromewebstore.google.com/detail/%E6%95%B0%E6%8D%AE%E6%9C%8D%E5%8A%A1api/ohdabcajdgjfjpfhoghpkiifbchoonja)
 
+![image](https://img.alicdn.com/imgextra/i2/O1CN01dfsLY626A0vusJcw5_!!6000000007620-49-tps-2716-1534.webp)
+
 ![image](https://img.alicdn.com/imgextra/i4/O1CN015IkPOv21v7anw9Xtl_!!6000000007046-0-tps-2878-1504.jpg)
 
 ![image](https://img.alicdn.com/imgextra/i1/O1CN01ZbBncz26PaOo35YPY_!!6000000007654-49-tps-2878-1664.webp)
 
 ![image](https://img.alicdn.com/imgextra/i2/O1CN01f83rzJ1unbmfy62Yh_!!6000000006082-49-tps-2878-1662.webp)
-
-### If you want enable contextmenu feature (passing web page text selection into a API parameter), please modify manifest and remove contextmenus and background comments.
-![image](https://img.alicdn.com/imgextra/i2/O1CN01dfsLY626A0vusJcw5_!!6000000007620-49-tps-2716-1534.webp)
-
 
 ## Table of Contents
 

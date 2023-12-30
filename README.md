@@ -18,6 +18,8 @@
 
 应用安装 Extension Installation [Link](https://chromewebstore.google.com/detail/%E6%95%B0%E6%8D%AE%E6%9C%8D%E5%8A%A1api/ohdabcajdgjfjpfhoghpkiifbchoonja)
 
+操作影片 [video](https://www.youtube.com/watch?v=OzVneLAhxZM)
+
 ![image](https://img.alicdn.com/imgextra/i2/O1CN01dfsLY626A0vusJcw5_!!6000000007620-49-tps-2716-1534.webp)
 
 ![image](https://img.alicdn.com/imgextra/i4/O1CN015IkPOv21v7anw9Xtl_!!6000000007046-0-tps-2878-1504.jpg)

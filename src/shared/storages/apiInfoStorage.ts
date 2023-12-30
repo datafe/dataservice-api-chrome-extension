@@ -18,7 +18,7 @@ const defaultApiList: ApiData[] = [
     apiParams: [
       { name: 'word', value: 'hello' },
     ],
-    sheetDisplayDataKey: '0.phonetics.1',
+    sheetDisplayDataKey: '0.meanings.0.definitions',
   },
   // {
   //   apiId: 'zh-word-dictionary',

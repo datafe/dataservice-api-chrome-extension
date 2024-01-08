@@ -10,9 +10,6 @@ none
 
 ---------------------------------------------------------------------
 
-## V1.0.6
-1. Fixed aone query bugs
-
 ## V1.0.5
 1. Re-add context menu permission
 
